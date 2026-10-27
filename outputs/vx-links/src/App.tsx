@@ -136,14 +136,14 @@ export default function App() {
           {activeDetail === 'courses' ? <MethodXVisual reduced={reduceMotion}/> : <motion.img key={activeDetail} className="experience-photo" src={content.photo} alt="Fábio Castello, da VX" initial={{ scale: reduceMotion ? 1 : 1.1 }} animate={{ scale: 1 }} transition={{ duration: 1.15, delay: .5 }}/>}
           <div className="experience-photo-shade"/>
           <img className="experience-logo" src="/vx-logo.png" alt="VX"/>
-          <div className="visual-caption"><span>{activeDetail === 'courses' ? 'CONHECIMENTO QUE TRANSFORMA' : activeDetail === 'vx' ? 'SEU PRÓXIMO NÍVEL COMERCIAL' : 'VENDAS. PESSOAS. CONEXÕES.'}</span><strong>{activeDetail === 'courses' ? <>MÉTODO <em>X.</em></> : activeDetail === 'vx' ? <>SEU COMERCIAL.<br/><em>OUTRO NÍVEL.</em></> : <>FÁBIO<br/><em>CASTELLO.</em></>}</strong></div>
+          <div className="visual-caption"><span>{activeDetail === 'courses' ? 'CONHECIMENTO QUE TRANSFORMA' : activeDetail === 'vx' ? 'SEU PRÓXIMO NÍVEL COMERCIAL' : 'VENDAS. PESSOAS. CONEXÕES.'}</span><strong>{activeDetail === 'courses' ? <>MÉTODO <em>X.</em></> : activeDetail === 'vx' ? <>SEU COMERCIAL.<br/><em>OUTRO NÍVEL.</em></> : <>FÁBIO<br/>{' '}<em>CASTELLO.</em></>}</strong></div>
         </div>}
         <div className="experience-content">
           <div className="dialog-top"><span className="eyebrow">{activeDetail ? details[activeDetail].eyebrow : 'VX · COMPARTILHAR'}</span><button autoFocus className="close" onClick={closeDetail} aria-label="Fechar painel"><X size={21}/></button></div>
           <motion.div initial={{ opacity: 0, y: reduceMotion ? 0 : 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: reduceMotion ? 0 : .67, duration: .35 }}>
             <h2 id="dialog-title">{activeDetail ? details[activeDetail].title : notice}</h2>
             <p id="dialog-description">{activeDetail ? details[activeDetail].description : 'Copie o endereço da página na barra do navegador para compartilhar.'}</p>
-            {activeDetail && details[activeDetail].points.length > 0 && <ul className="experience-points">{details[activeDetail].points.map(point => <li key={point}><Check size={15}/><span>{point}</span></li>)}</ul>}
+            {activeDetail && details[activeDetail].points.length > 0 && <div className="about-biography">{details[activeDetail].points.map(point => <p key={point}>{point}</p>)}<a href={content.instagramUrl} target="_blank" rel="noopener noreferrer">Acompanhe no Instagram <ArrowUpRight size={14}/></a></div>}
 
           </motion.div>
           <button className="back-link" onClick={closeDetail}>Voltar para a página</button>

@@ -7,6 +7,7 @@ export const content = {
   bio: 'Ajudo vendedores a vender mais e empresas a estruturar seus times comerciais.',
   signature: 'Criador do Método X.',
   photo: '/fabio.png',
+  instagramUrl: 'https://www.instagram.com/fabiocastello_vx/',
   // Informe apenas dígitos: código do país + DDD + número.
   whatsappNumber: '' as string,
   vxWebsite: 'https://www.vxconsultoria.com/',
@@ -37,8 +38,8 @@ export const details = {
   about: {
     eyebrow: 'SOBRE MIM',
     title: 'Fábio Castello',
-    description: 'Em breve, conheça a trajetória de Fábio Castello.',
-    points: [],
+    description: 'Sou Fábio Castello Branco. Meu trabalho conecta vendas, CRM e o desenvolvimento de equipes comerciais.',
+    points: ['Acredito que vender não depende de um talento inato: é uma habilidade que se desenvolve com método e processo. É essa visão que orienta meu trabalho com vendedores e empresas.', 'Na VX, ajudo empresas a organizar sua operação de vendas por meio de implantação, treinamento e estruturação de processos comerciais.', 'Também sou o criador do Método X, um curso para quem quer aprender a vender e desenvolver suas habilidades comerciais.'],
   },
 
 };
