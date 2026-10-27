@@ -38,8 +38,8 @@ export const details = {
   about: {
     eyebrow: 'SOBRE MIM',
     title: 'Fábio Castello',
-    description: 'Sou Fábio Castello Branco. Meu trabalho conecta vendas, CRM e o desenvolvimento de equipes comerciais.',
-    points: ['Acredito que vender não depende de um talento inato: é uma habilidade que se desenvolve com método e processo. É essa visão que orienta meu trabalho com vendedores e empresas.', 'Na VX, ajudo empresas a organizar sua operação de vendas por meio de implantação, treinamento e estruturação de processos comerciais.', 'Também sou o criador do Método X, um curso para quem quer aprender a vender e desenvolver suas habilidades comerciais.'],
+    description: 'Acredito que vender nunca dependeu de talento, e sim de processo.',
+    points: ['É essa visão que orienta meu trabalho com vendedores e empresas.', 'Na VX, ajudo empresas a organizar sua operação de vendas por meio de implantação, treinamento e estruturação de processos comerciais.', 'Também sou o criador do Método X, um curso para quem quer aprender a vender e desenvolver suas habilidades comerciais.'],
   },
 
 };
