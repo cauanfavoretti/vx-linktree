@@ -97,9 +97,7 @@ export default function App() {
           <div className="avatar-wrap"><img className="avatar" src={content.photo} alt="Fábio Castello"/><span className="avatar-badge" aria-hidden="true">X</span></div>
           <div className="eyebrow">{content.role}</div>
           <h1 id="profile-name">{content.name}<span> | {content.specialty}</span></h1>
-          <p className="bio">{content.bio}</p>
-          <p className="signature">{content.signature.replace('Método X.', '')}<strong>Método <span>X.</span></strong></p>
-          <div className="profile-tag"><span className="small-dot"/>Treinamentos e implantação comercial</div>
+
         </motion.section>
         <section id="caminhos" aria-labelledby="paths-title">
           <div className="section-heading"><span className="line"/><h2 id="paths-title">QUAL É O SEU PRÓXIMO PASSO?</h2><span className="line"/></div>
